@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Fatih Favian Mahardika</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ed;
+    color: #333;
+}
+
+nav {
+    background: #a87559;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f2d9c8;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: #eee3d8;
+    gap: 40px;
+}
+
+.hero h1 {
+    color: #a87559;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.hero img {
+    width: 270px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+.btn {
+    display: inline-block;
+    background: #a87559;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.judul {
+    color: #a87559;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    color: #a87559;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+.skills {
+    background: #a87559;
+}
+
+.skills .judul {
+    color: white;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    line-height: 2.2;
+}
+
+.contact a {
+    color: #a87559;
+    text-decoration: none;
+}
+
+footer {
+    background: #a87559;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero img {
+        width: 220px;
+        height: 280px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Fatih Portfolio</h2>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+
+    <div>
+        <h1>Fatih Favian Mahardika</h1>
+
+        <p>
+            Vocational High School Student
+            <br>
+            Software Engineering (RPL)
+            <br><br>
+            Welcome to my personal portfolio website.
+            I am interested in technology, machinery,
+            maintenance, and website development.
+        </p>
+
+        <a href="#profile" class="btn">Explore My Profile</a>
+    </div>
+
+    <img src="foto.jpeg" alt="Fatih Favian Mahardika">
+
+</div>
+
+<!-- PROFILE -->
+<section id="profile">
+
+    <h2 class="judul">Personal Profile</h2>
+
+    <div class="profile">
+        <p>
+            My name is Fatih Favian Mahardika. I am a student
+            of SMK Negeri 12 Jakarta, specializing in Software
+            Engineering (RPL).
+
+            I possess a strong drive to learn, and I am
+            disciplined, detail-oriented, and responsible.
+
+            I have completed an internship (PKL) in the fields
+            of production and maintenance. I am familiar with
+            the fundamentals of machine maintenance,
+            production processes, and the implementation
+            of 5S (5R) and TPM (Total Productive Maintenance)
+            workplace methodologies.
+
+            I am capable of working effectively within a team,
+            following operational procedures, and adapting
+            to new environments.
+        </p>
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="background:#eee3d8;">
+
+    <h2 class="judul">Education</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>SDN Warakas 05</h3>
+            <p>2015 - 2021</p>
+        </div>
+
+        <div class="card">
+            <h3>MTS Al-Khairiyah KP. Bahari</h3>
+            <p>2021 - 2024</p>
+        </div>
+
+        <div class="card">
+            <h3>SMKN 12 Jakarta</h3>
+            <p>2024 - 2027</p>
+            <p>Software Engineering (RPL)</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+
+    <h2 class="judul">My Skills</h2>
+
+    <div class="skill-list">
+
+        <div class="skill-item">
+            Machine Maintenance
+        </div>
+
+        <div class="skill-item">
+            Press Welding
+        </div>
+
+        <div class="skill-item">
+            Production Processes
+        </div>
+
+        <div class="skill-item">
+            5R Workplace Practices
+        </div>
+
+        <div class="skill-item">
+            TPM (Total Productive Maintenance)
+        </div>
+
+        <div class="skill-item">
+            Teamwork and Communication
+        </div>
+
+        <div class="skill-item">
+            Discipline and Responsibility
+        </div>
+
+        <div class="skill-item">
+            Willingness to Learn
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+
+    <h2 class="judul">My Experience</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Internship (PKL)</h3>
+
+            <p>
+                PT Toyota Motor Manufacturing Indonesia
+                <br><br>
+                Production Division - Maintenance
+                <br><br>
+                Learned about machine maintenance,
+                Press Welding, production processes,
+                5R workplace practices, and TPM.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HOBBIES -->
+<section style="background:#eee3d8;">
+
+    <h2 class="judul">My Hobbies</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Football</h3>
+            <p>Playing football and developing teamwork.</p>
+        </div>
+
+        <div class="card">
+            <h3>Exercising</h3>
+            <p>Maintaining fitness and physical activity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Technology</h3>
+            <p>Learning about machinery and technology.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="judul">Contact Me</h2>
+
+    <div class="contact">
+        <p>Email:
+            <a href="mailto:fatihfavianmahardika@gmail.com">
+                fatihfavianmahardika@gmail.com
+            </a>
+        </p>
+
+        <p>Instagram:
+            <a href="https://instagram.com/frank_vian_tih_16">
+                @frank_vian_tih_16
+            </a>
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Fatih Favian Mahardika | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
